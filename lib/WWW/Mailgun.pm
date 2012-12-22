@@ -57,8 +57,8 @@ sub _handle_response {
     die "Bad Request - Often missing a required parameter" if $rc == 400;
     die "Unauthorized - No valid API key provided" if $rc == 401;
     die "Request Failed - Parameters were valid but request failed" if $rc == 402;
-    die "Not Found - The requested item doesn’t exist" if $rc == 404;
-    die "Server Errors - something is wrong on Mailgun’s end" if $rc >= 500;
+    die "Not Found - The requested item doesn't exist" if $rc == 404;
+    die "Server Errors - something is wrong on Mailgun's end" if $rc >= 500;
 
 }
 
